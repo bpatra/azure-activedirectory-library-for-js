@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="matterMail">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>I am sandboxed</title>
+   
+    <link href="./Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <ul class="nav navbar-right navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </div>
+        <div ng-view></div>
+    </div>
+    <script src="./Scripts/angular.js"></script>
+    <script src="./Scripts/angular-route.js"></script>
+    <script src="./Scripts/angular-animate.js"></script>
+    <script src="./Scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="../lib/adal.js" type="application/javascript"></script>
+    <script src="../lib/adal-angular.js" type="application/javascript"></script>
+
+    <script src="App.module.js" type="text/javascript"></script>
+    <script src="App.routes.js" type="text/javascript"></script>
+    <script src="./Services/o365.service.js" type="text/javascript"></script>
+    <script src="./Home/Home.controller.js"></script>
+    <script src="./Settings/Settings.controller.js"></script>
+</body>
+</html>
