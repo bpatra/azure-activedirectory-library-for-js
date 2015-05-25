@@ -5,7 +5,6 @@
     var adalSettings = {
         tenant: 'mykelurodemo.onmicrosoft.com',
         clientId: 'b244a25e-a7d4-478a-acbc-78e345ea78f1',
-        postLogoutPath :'sandboxedSample/sandboxed.html',
         popupPath : 'lib/popupwindow.html',
         frameHost : 'http://localhost:35510/',
         aadEndpoints: {

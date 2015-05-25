@@ -28,7 +28,7 @@
             tenant: adalSettings.tenant,
             clientId: adalSettings.clientId,
             postLogoutRedirectUri: adalSettings.frameHost + adalSettings.popupPath,
-            loginConfigUrl: adalSettings.frameHost + adalSettings.popupPath,
+            popupConfigUri: adalSettings.frameHost + adalSettings.popupPath,
             frameHost : adalSettings.frameHost,
             endpoints: adalSettings.aadEndpoints
         }, $httpProvider);
