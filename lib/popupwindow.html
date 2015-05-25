@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Authentication popup</title>
+    <script>
+    (function(){
+        "use strict";
+        window.onload = function(){
+            var processed = false;
+            window.addEventListener("message", function receiveMessage(event) {
+               if(processed === false){
+                   processed = true;
+                   window.location.replace(event.data);
+               }
+            });
+        };
+     })();
+    </script>
+</head>
+<body>
+    <div id="oauthurl"></div>
+</body>
+</html>

@@ -1,11 +1,13 @@
-﻿'use strict';
+'use strict';
 (function () {
     var app = angular.module('matterMail', ['ngRoute', 'ngAnimate', 'AdalAngular']);
 
     var adalSettings = {
         tenant: 'mykelurodemo.onmicrosoft.com',
         clientId: 'b244a25e-a7d4-478a-acbc-78e345ea78f1',
-        postLogoutUrl :'https://localhost:44303/AppRead/index2.html',
+        postLogoutPath :'sandboxedSample/sandboxed.html',
+        popupPath : 'lib/popupwindow.html',
+        frameHost : 'http://localhost:35510/',
         aadEndpoints: {
             /* 'target endpoint to be called': 'target endpoint's resource ID'  */
             // sharepoint site containing lists

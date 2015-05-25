@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
     var app = angular.module('matterMail');
 
@@ -27,7 +27,9 @@
         adalProvider.init({
             tenant: adalSettings.tenant,
             clientId: adalSettings.clientId,
-            postLogoutRedirectUri: adalSettings.postLogoutUrl,
+            postLogoutRedirectUri: adalSettings.frameHost + adalSettings.postLogoutPath,
+            popupWindowUri: adalSettings.frameHost + adalSettings.popupPath,
+            frameHost : adalSettings.frameHost,
             endpoints: adalSettings.aadEndpoints
         }, $httpProvider);
     }]);
